@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brief Jerky</title>
+	<meta name="description" content="Committed to providing only the highest quality randomised briefs to digital designers worldwide. Innovative | industry-defining | thought-leadership.">
+    <meta name="keywords" content="brief, challenge, UI, UX, interface, app, design, prompt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body>
+    <div id="wrapper">
+    	<div id="inner">
+    		<div id="ideaDisplay">
+    			<!-- Ideas will display here -->
+    		</div>
+    		<body onload="newIdea()">
+    		<button onclick="newIdea();randomBg()">GET ANOTHER</button>
+    		<br>
+    		<button class="accordion">+ BONUS POINTS</button>
+                <div class="panel">
+                    <p>
+                        &#183; Translated into your non-native language<br>
+                        &#183; Created all icons from scratch<br>
+                        &#183; 100% native design<br>
+                        &#183; Landscape mode<br>
+                        &#183; Tablet version<br>
+                        &#183; AAA accessibility rating<br>
+                    </p>
+                </div>
+        	</div>
+    	<div id="floater">
+    	    <a href="/"><strong>Service</strong></a> 
+            <a href="/drawing">Drawing</a>
+    		<a href="https://dribbble.com/search?q=briefjerky">Other jerks</a>
+    	</div>
+    </div>
+	<script src="javascript.js"></script>
+	<script>
+	    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+	</script>
+</body>
+</html>
